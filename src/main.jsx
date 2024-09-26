@@ -17,7 +17,7 @@ import { Login } from "./pages/auth/Login.jsx";
 import { OtpVerification } from "./pages/auth/Verify.jsx";
 import { HelmetProvider } from "react-helmet-async";
 import Profile from "./pages/profilepage/Profile.jsx";
-import { CategoryCard } from "./components/Cards/CategoryCard.jsx";
+import {CategoryCard} from "./components/cards/CategoryCard.jsx"
 
 const router = createBrowserRouter([
   {
