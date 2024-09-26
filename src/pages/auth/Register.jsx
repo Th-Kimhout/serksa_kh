@@ -4,6 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import logo from "../../assets/Image/logo.png"
 
 export function Register() {
   const navigate = useNavigate();
@@ -54,7 +55,7 @@ export function Register() {
               {/* left content */}
               <div className="w-1/2">
                 <Link to="/" className="flex self-center">
-                  <img src="src/assets/image/logo.png" alt="logo" />
+                  <img src={logo} alt="logo" />
                 </Link>
                 <p className="mt-10 text-xl font-bold text-center dark:text-textDark">
                   Start Your Learning Journey with SERKSA

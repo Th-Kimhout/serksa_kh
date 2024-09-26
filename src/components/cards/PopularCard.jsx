@@ -4,7 +4,7 @@ const popularCourses = [
     title: "UX/UI Design Course",
     description:
       "A UX/UI design course teaches creating user-centered designs, including user research, wireframing, prototyping, and visual design.",
-    image: "src/assets/Image/uxui.jpg",
+    image: "https://cdn.prod.website-files.com/64882bdce545bb88ff9090cd/65ca38e84eb70a9b40f1a216_tumbnail-ux-vs-ui.webp",
     lectures: "10 Lectures",
     duration: "1hr 30mins",
   },
@@ -12,7 +12,7 @@ const popularCourses = [
     title: "Web Development Bootcamp",
     description:
       "Learn full-stack web development from HTML, CSS, JavaScript to backend technologies and databases.",
-    image: "src/assets/Image/Webdevel.png",
+    image: "https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png",
     lectures: "20 Lectures",
     duration: "3hrs 15mins",
   },
@@ -20,7 +20,7 @@ const popularCourses = [
     title: "Photography Basics",
     description:
       "This course covers the fundamental techniques of photography, including composition, lighting, and editing.",
-    image: "src/assets/Image/Photograp.jpg",
+    image: "https://www.upskillist.com/assets/course-cards/website/wide/photography-21.png",
     lectures: "8 Lectures",
     duration: "2hrs",
   },
@@ -28,7 +28,7 @@ const popularCourses = [
     title: "Basic Html Course",
     description:
       "A basic HTML course covers structuring web pages with HTML tags, formatting text, embedding media, and creating links and forms.",
-    image: "src/assets/Image/Html.jpg",
+    image: "https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg",
     lectures: "8 Lectures",
     duration: "2hrs",
   },

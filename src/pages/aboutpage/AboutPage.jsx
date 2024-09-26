@@ -1,4 +1,8 @@
 import Members from "./Member";
+import work from "../../assets/Image/Team work.gif"
+import study from "../../assets/Image/Studying.gif"
+import teacherSmey from "../../assets/Image/teacherSmey.jpg"
+import teacherPhea from "../../assets/Image/teacherPhea.jpg"
 
 export function AboutUsSection() {
   return (
@@ -36,7 +40,7 @@ export function AboutUsSection() {
         <div className="w-full mt-10">
           <img
             className="mx-auto rounded-md"
-            src="src/assets/Image/Team work.gif"
+            src={work}
             alt="Office Space"
             // className="rounded-lg shadow-md mb-3 ml-20"
           />
@@ -56,7 +60,7 @@ export function AboutUsSection() {
           {/* Left Side - Image */}
           <div className="w-full pr-4">
             <img
-              src="src/assets/Image/Studying.gif"
+              src={study}
               alt="Educational Concept"
               className="rounded-lg mx-auto shadow-md"
               data-aos="fade-right"
@@ -145,7 +149,7 @@ export function AboutUsSection() {
                 <div className="z-50 flex justify-center items-center h-full">
                   <div className="text-center">
                     <img
-                      src="src/assets/Image/teacherSmey.jpg"
+                      src={teacherSmey}
                       alt=""
                       className="h-[120px] w-[120px] object-cover rounded-full border-4 border-white mx-auto"
                     />
@@ -171,7 +175,7 @@ export function AboutUsSection() {
                 <div className="z-50 flex justify-center items-center h-full">
                   <div className="text-center">
                     <img
-                      src="src/assets/Image/teacherPhea.jpg"
+                      src={teacherPhea}
                       alt=""
                       className="h-[120px] w-[120px] object-cover rounded-full border-4 border-white mx-auto"
                     />

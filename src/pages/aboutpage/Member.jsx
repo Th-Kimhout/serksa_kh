@@ -1,45 +1,53 @@
 import React from "react";
+import Kimhout from "../../assets/Image/Kimhout.jpg"
+import Makara from "../../assets/Image/Makara.jpg"
+import Dara from "../../assets/Image/Dara.jpg"
+import Mara from "../../assets/Image/Mara.jpg"
+import Pich from "../../assets/Image/Pich.jpg"
+import Sokheng from "../../assets/Image/SokHeng.jpg"
+import Kimcheng from "../../assets/Image/Kimcheng.jpg"
+import Narath from "../../assets/Image/Narath.jpg"
 export function Members() {
   const teamMembers = [
     {
       name: "ធៀប គីមហួត",
       role: "ប្រធានក្រុម",
-      image: "src/assets/Image/Kimhout.jpg",
+      image: Kimhout,
     },
     {
       name: "ហ៊ុល មករា",
       role: "សមាជិកក្រុម",
-      image: "src/assets/Image/Makara.jpg",
+      image: Makara,
     },
     {
       name: "គង់ ស៊ីសុវណ្ណដារ៉ា",
       role: "សមាជិកក្រុម",
-      image: "src/assets/Image/Dara.jpg",
+      image: Dara,
     },
     {
       name: "យ៉េន ម៉ារ៉ា",
       role: "សមាជិកក្រុម",
-      image: "src/assets/Image/Mara.jpg",
+      image: Mara,
     },
     {
       name: "សំ សុគន្ធស្រីពេជ្រ",
       role: "សមាជិកក្រុម",
-      image: "src/assets/Image/Pich.jpg",
+      image: Pich,
     },
     {
       name: "បុល សុខហេង",
       role: "សមាជិកក្រុម",
-      image: "src/assets/Image/SokHeng.jpg",
+      image: Sokheng,
     },
     {
       name: "អ៊ឹង គីមចេង",
       role: "សមាជិកក្រុម",
-      image: "src/assets/Image/Kimcheng.jpg",
+      image: Kimcheng,
     },
     {
       name: "លឹម សុផាណារ៉ាត",
       role: "សមាជិកក្រុម",
-      image: "src/assets/Image/Narath.jpg",
+      image: Narath,
     },
   ];
 

@@ -6,6 +6,7 @@ import { login } from "../../services/auth/authAction";
 import { useNavigate } from "react-router-dom";
 import { getAccessToken, setAccessToken } from "../../lib/secureLocalStorage";
 import { Link } from "react-router-dom";
+import logo from "../../assets/Image/logo.png"
 export function Login() {
   const navigate = useNavigate();
   const regex =
@@ -51,7 +52,7 @@ export function Login() {
           >
             <Form className="flex flex-col p-10 rounded-md bg-slate-200 dark:bg-cardDark border">
               <img
-                src="src/assets/image/logo.png"
+                src={logo}
                 alt="logo"
                 className="self-center w-24 m-3"
               />{" "}

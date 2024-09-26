@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { getAllCourses } from "../../services/courses/getAllCourse";
 import CourseCard from "../../components/cards/CourseCard";
+import teacherChay from "../../assets/Image/instructor.jpg"
 
 export default function InstructorPage() {
   const [courses, setCourses] = useState([]);
@@ -21,7 +22,7 @@ export default function InstructorPage() {
         <section className=" ">
           <div className="grid grid-cols-1 md:grid-cols-3">
             <div className=" grid place-content-center ">
-              <img src="src/assets/Image/instructor.jpg" alt="image" className="rounded-full" />
+              <img src={teacherChay} alt="image" className="rounded-full" />
             </div>
             <div className="  md:col-span-2  pt-10 lg:ps-5">
               <h2 className="font-bold text-2xl dark:text-textDark">Chan Chhaya</h2>

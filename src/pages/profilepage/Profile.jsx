@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { getUserInfo } from "../../services/user/userAction";
+import Kimhout from "../../assets/Image/Kimhout.jpg"
 
 export default function Profile() {
   const [userInfo, setUserInfo] = React.useState(null); // Change initial state to null
@@ -28,7 +29,7 @@ export default function Profile() {
     <section className="container max-w-xl mt-5">
       <div className="flex flex-col items-center">
         <img
-          src="src/assets/Image/Kimhout.jpg"
+          src={Kimhout}
           alt="Profile Picture"
           className="rounded-full border-4 border-green-600 w-44 h-44 object-cover mb-4"
         />

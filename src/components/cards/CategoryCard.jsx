@@ -4,32 +4,32 @@ const tips = [
   {
     title: 'Web development',
     description: '7 Courses',
-    image: 'src/assets/image/Webdevel.png', 
+    image: 'https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png', 
   },
   {
     title: 'Photography',
     description: '2 Courses',
-    image: 'src/assets/image/Photograp.jpg', 
+    image: 'https://aaftonline.com/blog/wp-content/uploads/2024/01/What-are-the-Benefits-of-Photography-Complete-Overview.png', 
   },
   {
     title: 'Marketing',
     description: '2 Courses',
-    image: 'src/assets/image/Marketing.png', 
+    image: 'https://builtin.com/sites/www.builtin.com/files/styles/ckeditor_optimize/public/inline-images/marketing-pillar-page-marketing-overview_0.png', 
   },
   {
     title: 'Programming languages',
     description: '10 Courses',
-    image: 'src/assets/image/program.png', 
+    image: 'https://bairesdev.mo.cloudinary.net/blog/2022/01/programming-languages-1.jpg?tx=w_1920,q_auto', 
   },
   {
     title: 'Financial',
     description: '3 Courses',
-    image: 'src/assets/image/finace.jpg', 
+    image: 'https://puritygel.com.mx/wp-content/uploads/2018/06/5_0016_apple-brainstorming-business-908288.jpg', 
   },
   {
     title: 'Engineering drawing',
     description: '2 Courses',
-    image: 'src/assets/image/Engineer.png', 
+    image: 'https://5.imimg.com/data5/SELLER/Default/2024/3/405542886/UX/OO/KJ/215532981/engineering-drawing-services.jpeg', 
   },
 
 ];

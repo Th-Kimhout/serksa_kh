@@ -2,6 +2,11 @@ import { PopularCard } from "../../components/cards/PopularCard";
 import { CategoryCard } from "../../components/cards/CategoryCard";
 import React from "react";
 import hero from "../../assets/Image/hero.png";
+import review from "../../assets/Image/review.png"
+import practice from "../../assets/Image/practise.jpg"
+import visual from "../../assets/Image/visual.jpg"
+import bootstrap from "../../assets/Image/Bootstrap_logo.png"
+import tailwind from "../../assets/Image/tailwind.png"
 
 export function Homepage() {
 
@@ -129,7 +134,7 @@ export function Homepage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           <div className="bg-white dark:bg-black shadow-lg rounded-lg overflow-hidden">
             <img
-              src="src/assets/Image/review.png"
+              src={review}
               alt=""
               className="w-full h-40 sm:h-48 object-cover"
             />
@@ -145,7 +150,7 @@ export function Homepage() {
 
           <div className="bg-white dark:bg-black shadow-lg rounded-lg overflow-hidden">
             <img
-              src="src/assets/Image/practise.jpg"
+              src={practice}
               alt=""
               className="w-full h-40 sm:h-48 object-cover"
             />
@@ -161,7 +166,7 @@ export function Homepage() {
 
           <div className="bg-white dark:bg-black shadow-lg rounded-lg overflow-hidden">
             <img
-              src="src/assets/Image/visual.jpg"
+              src={visual}
               alt=""
               className="w-full h-40 sm:h-48 object-cover"
             />
@@ -216,7 +221,7 @@ export function Homepage() {
           {/* Bootstrap */}
           <div className="flex flex-col items-center">
             <img
-              src="src/assets/Image/Bootstrap_logo.svg.png"
+              src={bootstrap}
               alt="JavaScript"
               className="w-16 h-16"
             />
@@ -227,7 +232,7 @@ export function Homepage() {
           {/* Tailwind CSS */}
           <div className="flex flex-col items-center">
             <img
-              src="src/assets/Image/tailwind.png"
+              src={tailwind}
               alt="Tailwind CSS"
               className="w-25 h-16"
             />

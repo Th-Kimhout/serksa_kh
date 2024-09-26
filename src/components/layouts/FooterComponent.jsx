@@ -1,4 +1,5 @@
 import React from "react";
+import cstad from "../../assets/Image/cstad.jpg"
 
 export default function FooterComponent() {
   return (
@@ -10,7 +11,7 @@ export default function FooterComponent() {
         <div>
           <img
             className="w-35 h-32 mx-auto rounded-lg"
-            src="src/assets/Image/cstad.jpg"
+            src={cstad}
             alt="logo image"
           />
         </div>

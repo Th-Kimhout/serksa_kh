@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/Image/logo.png";
+import profile from "../../assets/Image/Makara.jpg"
 
 export function NavbarComponent() {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
@@ -28,7 +30,7 @@ export function NavbarComponent() {
             <div className="flex items-center">
               <Link to="/">
                 <img
-                  src="src/assets/Image/logo.png"
+                  src={logo}
                   alt="logo image"
                   className="md:h-16 md:w-20 h-10 w-14"
                 />
@@ -128,7 +130,7 @@ export function NavbarComponent() {
                 <span class="sr-only">Open user menu</span>
                 <img
                   class="md:w-7 md:h-7 w-5 h-5 rounded-full"
-                  src="src/assets/Image/Makara.jpg"
+                  src={profile}
                   alt="user photo"
                 />
               </button>
