@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { fetchWatchLaterCourses, removeFromWatchLater } from "../../services/user/userAction"; // Ensure this is correctly imported
-import CourseCard from "../../components/Cards/CourseCard";
+import CourseCard from "../../components/cards/CourseCard";
 
 
 export default function WatchLater() {
