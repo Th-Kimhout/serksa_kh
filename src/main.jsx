@@ -7,7 +7,6 @@ import RootLayout from "./components/layouts/RootLayout.jsx";
 import InstructorPage from "./pages/instructorPage/InstructorPage.jsx";
 import CoursePage from "./pages/coursePage/CoursePage.jsx";
 import AboutPage from "./pages/aboutpage/AboutPage.jsx";
-import { CategoryCard } from "./components/Cards/CategoryCard.jsx";
 import CourseDetail from "./pages/courseDetail/CourseDetail.jsx";
 import Started from "./pages/started/Started.jsx";
 import Starteda from "./pages/started/Starteda.jsx";
@@ -18,6 +17,7 @@ import { Login } from "./pages/auth/Login.jsx";
 import { OtpVerification } from "./pages/auth/Verify.jsx";
 import { HelmetProvider } from "react-helmet-async";
 import Profile from "./pages/profilepage/Profile.jsx";
+import { CategoryCard } from "./components/Cards/CategoryCard.jsx";
 
 const router = createBrowserRouter([
   {
