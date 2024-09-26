@@ -4,7 +4,7 @@ import { getSingleCourses } from "../../services/courses/getAllCourse";
 import CourseDetailCard from "../../components/cards/CourseCardDetail";
 import { getAllCourses } from "../../services/courses/getAllCourse";
 // import CourseCard from "../.././components/cards/CourseCard"; // Import CourseCard from "../../components/cards/CourseCard";
-import CourseCard from "../../components/Cards/CourseCard";
+import CourseCard from "../../components/cards/CourseCard";
 
 export default function CourseDetail() {
   const [course, setCourse] = useState(null); // For storing the course data

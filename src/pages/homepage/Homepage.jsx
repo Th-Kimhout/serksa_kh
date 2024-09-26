@@ -1,5 +1,5 @@
-import { PopularCard } from "../../components/Cards/PopularCard";
-import { CategoryCard } from "../../components/Cards/CategoryCard";
+import { PopularCard } from "../../components/cards/PopularCard";
+import { CategoryCard } from "../../components/cards/CategoryCard";
 import React from "react";
 import hero from "../../assets/Image/hero.png";
 

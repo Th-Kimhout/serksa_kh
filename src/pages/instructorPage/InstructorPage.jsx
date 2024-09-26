@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { getAllCourses } from "../../services/courses/getAllCourse";
-import CourseCard from "../../components/Cards/CourseCard";
+import CourseCard from "../../components/cards/CourseCard";
 
 export default function InstructorPage() {
   const [courses, setCourses] = useState([]);
