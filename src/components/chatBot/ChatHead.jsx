@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ChatIcon from "../../assets/image/Chatbot.png";
+import ChatIcon from "../../assets/Image/Chatbot.png";
 import ChatWindow from "./ChatWindow";
 function ChatComponent() {
   const [isChatVisible, setIsChatVisible] = useState(false);
