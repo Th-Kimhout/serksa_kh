@@ -2,8 +2,8 @@ import { React, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getAllCourses } from "../../services/courses/getAllCourse";
 import { getAllCoursesPage } from "../../services/courses/getCoursePage";
-import { Pagination } from "flowbite-react";
-import CoursePage from "../coursePage/CoursePage";
+// import { Pagination } from "flowbite-react";
+// import CoursePage from "../coursePage/CoursePage";
 
 export function OverviewCourse() {
   const [course, setCourse] = useState([]);
