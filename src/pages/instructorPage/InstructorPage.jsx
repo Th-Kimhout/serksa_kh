@@ -2,7 +2,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { getAllCourses } from "../../services/courses/getAllCourse";
 import CourseCard from "../../components/cards/CourseCard";
-import teacherChay from "../../assets/Image/instructor.jpg"
+import teacherChay from "../../assets/Image/instructor.jpg";
+import thumbnail from "../../assets/logo.jpg";
 
 export default function InstructorPage() {
   const [courses, setCourses] = useState([]);
@@ -17,16 +18,27 @@ export default function InstructorPage() {
   }, []);
   return (
     <>
-      <div className="container min-w-80 mx-auto p-5">
-        <h1 className="text-primary font-bold text-3xl mt-5 dark:text-textDark">Instructor</h1>
-        <section className=" ">
+      <Metadata
+        title="SERKSA - Instructor"
+        description="SERKSA is an free E-Learning Platform that offer a wide ranges of courses. Take your time and learn from Anywhere. SERKSA was developed by CSTAD Pre-University Scholarship Students Group 3."
+        author="CSTAD"
+        keywords="free, learning, free courses, khmer, online"
+        thumbnail={thumbnail}
+      />
+      <div className="container p-5 mx-auto min-w-80">
+        <h1 className="mt-5 text-3xl font-bold text-primary dark:text-textDark">
+          Instructor
+        </h1>
+        <section className="">
           <div className="grid grid-cols-1 md:grid-cols-3">
-            <div className=" grid place-content-center ">
+            <div className="grid place-content-center">
               <img src={teacherChay} alt="image" className="rounded-full" />
             </div>
-            <div className="  md:col-span-2  pt-10 lg:ps-5">
-              <h2 className="font-bold text-2xl dark:text-textDark">Chan Chhaya</h2>
-              <p className="text-gray-400 font-bold text-lg">
+            <div className="pt-10 md:col-span-2 lg:ps-5">
+              <h2 className="text-2xl font-bold dark:text-textDark">
+                Chan Chhaya
+              </h2>
+              <p className="text-lg font-bold text-gray-400">
                 software Developer
               </p>
               <p className="dark:text-textDark lg:text-Description ">
@@ -59,15 +71,18 @@ export default function InstructorPage() {
             </div>
           </div>
         </section>
-        <h2 className="font-bold text-3xl  text-primary mx-auto mt-10">
+        <h2 className="mx-auto mt-10 text-3xl font-bold text-primary">
           More Course by Chan Chhaya
         </h2>
-        <section className="mt-10 w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5  mx-auto">
+        <section className="w-full mt-10">
+          <div className="grid grid-cols-1 gap-5 mx-auto md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {courses.map((content) => (
               <CourseCard
                 title={content.title}
-                thumbnail={content.thumbnail.replace('http://localhost:8080/image/', '')}
+                thumbnail={content.thumbnail.replace(
+                  "http://localhost:8080/image/",
+                  ""
+                )}
                 description={content.description}
                 instructorUsername={content.instructorUsername}
               />

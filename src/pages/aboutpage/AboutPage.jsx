@@ -1,25 +1,33 @@
 import Members from "./Member";
-import work from "../../assets/Image/Team work.gif"
-import study from "../../assets/Image/Studying.gif"
-import teacherSmey from "../../assets/Image/teacherSmey.jpg"
-import teacherPhea from "../../assets/Image/teacherPhea.jpg"
+import work from "../../assets/Image/Team work.gif";
+import study from "../../assets/Image/Studying.gif";
+import teacherSmey from "../../assets/Image/teacherSmey.jpg";
+import thumbnail from "../../assets/logo.jpg";
+import teacherPhea from "../../assets/Image/teacherPhea.jpg";
 
 export function AboutUsSection() {
   return (
-    <main className="container mx-auto mt-8 px-4 font-khmerFont">
-      <div className="flex flex-wrap mx-auto items-center text-center">
+    <main className="container px-4 mx-auto mt-8 font-khmerFont">
+      <Metadata
+        title="SERKSA - About Us"
+        description="SERKSA is an free E-Learning Platform that offer a wide ranges of courses. Take your time and learn from Anywhere. SERKSA was developed by CSTAD Pre-University Scholarship Students Group 3."
+        author="CSTAD"
+        keywords="free, learning, free courses, khmer, online"
+        thumbnail={thumbnail}
+      />
+      <div className="flex flex-wrap items-center mx-auto text-center">
         {/* Left Side - Text Content */}
         <div className="container mx-auto">
-          <h1 className="text-4xl font-khmerFont font-bold text-blueLight mb-4 text-center ">
+          <h1 className="mb-4 text-4xl font-bold text-center font-khmerFont text-blueLight ">
             អំពីពួកយើង
           </h1>
-          <h2 className="text-2xl mb-4 dark:text-textDark">
-            <span className="text-primary font-semibold font-khmerFont">
+          <h2 className="mb-4 text-2xl dark:text-textDark">
+            <span className="font-semibold text-primary font-khmerFont">
               សិក្សា
             </span>{" "}
             បានផ្ដល់ឱកាសជាច្រើនទៅដល់យុវជនកម្ពុជាដើម្បីរៀនដោយមិនឥតគិតថ្លៃ
           </h2>
-          <p className="text-textBlack mb-4 font-english text-lg dark:text-textDark">
+          <p className="mb-4 text-lg text-textBlack font-english dark:text-textDark">
             ការផ្សព្វផ្សាយអប់រំនៅកម្ពុជាត្រូវបានបង្កើតឡើងជាមួយនឹងចក្ខុវិស័យនៃការផ្លាស់ប្តូរការអប់រំនៅកម្ពុជា
             ដោយប្រើប្រាស់ថាមពលរួមបញ្ចូលគ្នានៃអ្នកជំនាញបច្ចេកទេស
             និងគ្រូបង្រៀនកម្ពុជា ដែលធ្វើការរួមគ្នាដើម្បីទ្រទ្រង់
@@ -31,7 +39,7 @@ export function AboutUsSection() {
             យើងជឿថាការអប់រំគឺជាសិទ្ធិជាមូលដ្ឋាន
             និងជាឧបករណ៍ដ៏មានអានុភាពដើម្បីបង្កើតអនាគតដ៏ត្រចះត្រចង់សម្រាប់ទាំងអស់គ្នា។
           </p>
-          <button className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-primary">
+          <button className="px-4 py-2 text-white bg-green-500 rounded-md hover:bg-primary">
             ចូលរួមជាមួយយើង
           </button>
         </div>
@@ -42,7 +50,7 @@ export function AboutUsSection() {
             className="mx-auto rounded-md"
             src={work}
             alt="Office Space"
-            // className="rounded-lg shadow-md mb-3 ml-20"
+            // className="mb-3 ml-20 rounded-lg shadow-md"
           />
           {/* <img
             src="./img/work.jfif"
@@ -52,8 +60,8 @@ export function AboutUsSection() {
         </div>
       </div>
 
-      <section className="container mx-auto mt-16 px-4 font-english ">
-        <h2 className="text-3xl font-bold text-blueLight text-center mb-8 mt-5">
+      <section className="container px-4 mx-auto mt-16 font-english ">
+        <h2 className="mt-5 mb-8 text-3xl font-bold text-center text-blueLight">
           បេសកម្មរបស់យើង។
         </h2>
         <div className="flex flex-wrap items-center">
@@ -62,7 +70,7 @@ export function AboutUsSection() {
             <img
               src={study}
               alt="Educational Concept"
-              className="rounded-lg mx-auto shadow-md"
+              className="mx-auto rounded-lg shadow-md"
               data-aos="fade-right"
               data-aos-duration="1000"
             />
@@ -71,12 +79,12 @@ export function AboutUsSection() {
           {/* Right Side - Text Content */}
           <div className="container mx-auto lg:mt-0 text-Description font-khmerFont ">
             <p
-              className="text-textBlack ml-5"
+              className="ml-5 text-textBlack"
               data-aos="fade-down-left"
               data-aos-duration="1000"
               text-align="center"
             >
-              <span className="font-khmerFont block text-center font-bold text-Title dark:text-textDark">
+              <span className="block font-bold text-center font-khmerFont text-Title dark:text-textDark">
                 {" "}
                 បេសកម្មរបស់យើងគឺ៖
               </span>{" "}
@@ -95,20 +103,19 @@ export function AboutUsSection() {
         </div>
       </section>
       {/* Benefits Section */}
-      <section className="container mx-auto mt-16 px-4 font-khmerFont">
+      <section className="container px-4 mx-auto mt-16 font-khmerFont">
         <h2
-          className="text-3xl font-bold  text-center mb-8 text-blueLight"
+          className="mb-8 text-3xl font-bold text-center text-blueLight"
           data-aos="fade-up"
           data-aos-delay="30"
           data-aos-duration="10"
         >
           វិធីសាស្រ្តរបស់យើង។
         </h2>
-        <p className="text-xl text-left font-khmerFont mb-8 dark:text-textDark">
-          
-          <p className="text-primary text-center text-Title font-bold font-khmerFont">
+        <p className="mb-8 text-xl text-left font-khmerFont dark:text-textDark">
+          <p className="font-bold text-center text-primary text-Title font-khmerFont">
             សិក្សា{" "}
-            <span className="text-black font-normal dark:text-textDark">
+            <span className="font-normal text-black dark:text-textDark">
               ប្តេជ្ញាផ្តល់នូវបទពិសោធន៍អប់រំតាមអ៊ីនធឺណិត “សាមញ្ញ ព័ត៌មាន
               និងរីករាយ”។
             </span>
@@ -130,8 +137,8 @@ export function AboutUsSection() {
       </section>
 
       {/* Mentor Section */}
-      <section className="relative bg-cover h-full w-full border-none -z-50 font-khmerFont">
-        <div className="text-center font-bold font-khmer text-4xl text-primary">
+      <section className="relative w-full h-full bg-cover border-none -z-50 font-khmerFont">
+        <div className="text-4xl font-bold text-center font-khmer text-primary">
           <h3 data-aos="zoom-in-up" className="pt-4 aos-init aos-animate">
             អ្នកណែនាំរបស់យើង
           </h3>
@@ -145,8 +152,8 @@ export function AboutUsSection() {
             >
               <div className="absolute bottom-0 left-0 w-[50%] h-[50%] border-l-[3px] border-b-[3px] border-green-500"></div>
               <div className="h-[200px] w-[240px] relative overflow-hidden flex justify-center items-center">
-                <div className="absolute inset-0 bg-blueLight transform origin-bottom-left -z-20"></div>
-                <div className="z-50 flex justify-center items-center h-full">
+                <div className="absolute inset-0 origin-bottom-left transform bg-blueLight -z-20"></div>
+                <div className="z-50 flex items-center justify-center h-full">
                   <div className="text-center">
                     <img
                       src={teacherSmey}
@@ -171,8 +178,8 @@ export function AboutUsSection() {
             >
               <div className="absolute top-0 right-0 w-[50%] h-[50%] border-r-[3px] border-t-[3px] border-green-500"></div>
               <div className="h-[200px] w-[240px] relative overflow-hidden flex justify-center items-center">
-                <div className="absolute inset-0 bg-blueLight transform origin-bottom-left -z-20"></div>
-                <div className="z-50 flex justify-center items-center h-full">
+                <div className="absolute inset-0 origin-bottom-left transform bg-blueLight -z-20"></div>
+                <div className="z-50 flex items-center justify-center h-full">
                   <div className="text-center">
                     <img
                       src={teacherPhea}
@@ -191,7 +198,7 @@ export function AboutUsSection() {
         </div>
       </section>
       <section className="container mx-auto">
-      <Members/>
+        <Members />
       </section>
     </main>
   );

@@ -49,6 +49,13 @@ export default function CourseDetail() {
 
   return (
     <>
+      <Metadata
+        title="SERKSA - Course Detail"
+        description="SERKSA is an free E-Learning Platform that offer a wide ranges of courses. Take your time and learn from Anywhere. SERKSA was developed by CSTAD Pre-University Scholarship Students Group 3."
+        author="CSTAD"
+        keywords="free, learning, free courses, khmer, online"
+        thumbnail={thumbnail}
+      />
       <CourseDetailCard
         title={course.title}
         thumbnail={
@@ -61,12 +68,12 @@ export default function CourseDetail() {
         slug={course.slug}
         sections={course.sections}
       />
-      <div className="mt-10 mx-auto container ">
+      <div className="container mx-auto mt-10 ">
         <p class="text-4xl text-primary font-bold mb-10">More Courses</p>
       </div>
 
-      <section className="mt-10  container  mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mx-auto">
+      <section className="container mx-auto mt-10">
+        <div className="grid grid-cols-1 gap-5 mx-auto md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {courses.slice(0, 4).map((content) => (
             <CourseCard
               key={content.slug}

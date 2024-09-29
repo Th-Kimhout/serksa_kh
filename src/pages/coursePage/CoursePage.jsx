@@ -1,7 +1,7 @@
-
 import React, { useEffect, useState } from "react";
 import { getAllCourses } from "../../services/courses/getAllCourse";
 import CourseCard from "../../components/cards/CourseCard";
+import thumbnail from "../../assets/logo.jpg";
 
 export default function CoursePage() {
   const [courses, setCourses] = useState([]);
@@ -25,10 +25,17 @@ export default function CoursePage() {
 
   return (
     <main>
+      <Metadata
+        title="SERKSA - Courses"
+        description="SERKSA is an free E-Learning Platform that offer a wide ranges of courses. Take your time and learn from Anywhere. SERKSA was developed by CSTAD Pre-University Scholarship Students Group 3."
+        author="CSTAD"
+        keywords="free, learning, free courses, khmer, online"
+        thumbnail={thumbnail}
+      />
       {/* Section 1 */}
-      <section className="bg-gray-100 py-12 dark:bg-textBlack">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-3xl md:text-4xl font-bold text-primary dark:text-primary mb-4">
+      <section className="py-12 bg-gray-100 dark:bg-textBlack">
+        <div className="container px-4 mx-auto text-center">
+          <h1 className="mb-4 text-3xl font-bold md:text-4xl text-primary dark:text-primary">
             Here is Our Course Learning For Free
           </h1>
           <div className="w-full mx-auto">
@@ -36,20 +43,20 @@ export default function CoursePage() {
               <input
                 type="text"
                 placeholder="Course name or keywords..."
-                className="flex-grow border rounded-t md:rounded-l md:rounded-t-none px-4 py-2 mb-2 md:mb-0"
+                className="flex-grow px-4 py-2 mb-2 border rounded-t md:rounded-l md:rounded-t-none md:mb-0"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)} // Update search query state
               />
-              <select className="border-t border-b md:border-l-0 px-4 py-2 rounded-t-none md:rounded-none">
+              <select className="px-4 py-2 border-t border-b rounded-t-none md:border-l-0 md:rounded-none">
                 <option>CreateCourse</option>
                 <option>OverviewCourse</option>
               </select>
-              <button className="bg-primary text-white px-6 py-2 rounded-b md:rounded-r dark:bg-primary">
+              <button className="px-6 py-2 text-white rounded-b bg-primary md:rounded-r dark:bg-primary">
                 Search
               </button>
             </div>
           </div>
-          <p className="mt-4 text-gray-600 text-sm md:text-base dark:text-textDark">
+          <p className="mt-4 text-sm text-gray-600 md:text-base dark:text-textDark">
             Unlock endless learning opportunities with our free courses,
             offering high-quality content, interactive lessons, and
             certifications to boost your skills—all at no cost!
@@ -58,8 +65,8 @@ export default function CoursePage() {
       </section>
 
       {/* Section 2 */}
-      <section className="mt-10 w-full container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5  mx-auto">
+      <section className="container w-full mx-auto mt-10">
+        <div className="grid grid-cols-1 gap-5 mx-auto md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {filteredCourses.map((content) => (
             <CourseCard
               key={content.slug} // Add key for each CourseCard
