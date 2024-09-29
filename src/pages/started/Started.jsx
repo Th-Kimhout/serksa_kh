@@ -50,10 +50,11 @@ export default function starteda() {
 
   return (
     <>
-      <StartedCard 
-      slug={course.slug}
-      orderNo={orderNo1}
-       sections={course.sections} />
+      <StartedCard
+        slug={course.slug}
+        orderNo={orderNo1}
+        sections={course.sections}
+      />
     </>
   );
 }
