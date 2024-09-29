@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Metadata } from "../../lib/Metadata";
+import thumbnail from "../../assets/logo.jpg";
 const tips = [
   {
     title: "Web development",
