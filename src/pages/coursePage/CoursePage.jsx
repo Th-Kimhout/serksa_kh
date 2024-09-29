@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getAllCourses } from "../../services/courses/getAllCourse";
 import CourseCard from "../../components/cards/CourseCard";
 import thumbnail from "../../assets/logo.jpg";
+import { Metadata } from "../../lib/Metadata";
 
 export default function CoursePage() {
   const [courses, setCourses] = useState([]);

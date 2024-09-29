@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { fetchWatchLaterCourses, removeFromWatchLater } from "../../services/user/userAction"; // Ensure this is correctly imported
+import {
+  fetchWatchLaterCourses,
+  removeFromWatchLater,
+} from "../../services/user/userAction"; // Ensure this is correctly imported
 import CourseCard from "../../components/cards/CourseCard";
-
 
 export default function WatchLater() {
   const [watchLaterCourses, setWatchLaterCourses] = useState([]);
@@ -26,7 +28,9 @@ export default function WatchLater() {
     try {
       // Remove the course from Watch Later
       await removeFromWatchLater(courseId, accessToken);
-      setWatchLaterCourses(watchLaterCourses.filter((content) => content.id !== courseId));
+      setWatchLaterCourses(
+        watchLaterCourses.filter((content) => content.id !== courseId)
+      );
     } catch (error) {
       console.error("Error removing from Watch Later:", error);
     }
@@ -77,8 +81,8 @@ export default function WatchLater() {
   );
 }
 
-
-  {/* return (
+{
+  /* return (
     <div>
       <section className="py-5 mx-10 my-10 bg-teal-600 rounded-xl md:mx-20">
         <div className="px-4 ">
@@ -122,4 +126,5 @@ export default function WatchLater() {
       </section>
     </div>
   );
- */}
+ */
+}

@@ -4,6 +4,7 @@ import { getAllCourses } from "../../services/courses/getAllCourse";
 import CourseCard from "../../components/cards/CourseCard";
 import teacherChay from "../../assets/Image/instructor.jpg";
 import thumbnail from "../../assets/logo.jpg";
+import { Metadata } from "../../lib/Metadata";
 
 export default function InstructorPage() {
   const [courses, setCourses] = useState([]);

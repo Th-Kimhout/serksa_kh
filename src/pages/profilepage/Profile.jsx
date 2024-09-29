@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { getUserInfo } from "../../services/user/userAction";
 import Kimhout from "../../assets/Image/Kimhout.jpg";
 import thumbnail from "../../assets/logo.jpg";
+import { Metadata } from "../../lib/Metadata";
 
 export default function Profile() {
   const [userInfo, setUserInfo] = React.useState(null); // Change initial state to null

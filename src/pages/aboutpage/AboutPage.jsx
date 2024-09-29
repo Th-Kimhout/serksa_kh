@@ -4,6 +4,7 @@ import study from "../../assets/Image/Studying.gif";
 import teacherSmey from "../../assets/Image/teacherSmey.jpg";
 import thumbnail from "../../assets/logo.jpg";
 import teacherPhea from "../../assets/Image/teacherPhea.jpg";
+import { Metadata } from "../../lib/Metadata";
 
 export function AboutUsSection() {
   return (

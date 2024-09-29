@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { getSingleCourses } from "../../services/courses/getAllCourse";
 import CourseDetailCard from "../../components/cards/CourseCardDetail";
 import { getAllCourses } from "../../services/courses/getAllCourse";
+import { Metadata } from "../../lib/Metadata";
 // import CourseCard from "../.././components/cards/CourseCard"; // Import CourseCard from "../../components/cards/CourseCard";
 import CourseCard from "../../components/cards/CourseCard";
 
