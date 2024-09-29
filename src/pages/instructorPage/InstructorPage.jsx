@@ -7,11 +7,11 @@ import thumbnail from "../../assets/logo.jpg";
 
 export default function InstructorPage() {
   const [courses, setCourses] = useState([]);
-  console.log("course", courses);
+
   useEffect(() => {
     async function fetchAllCourses() {
       let content = await getAllCourses();
-      console.log("course", content);
+
       setCourses(content);
     }
     fetchAllCourses();

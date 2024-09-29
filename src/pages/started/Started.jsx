@@ -26,11 +26,11 @@ export default function starteda() {
     fetchSingleCourse();
   }, [slug]); // Add id as a dependency
   const [courses, setCourses] = useState([]);
-  console.log("course", courses);
+
   useEffect(() => {
     async function fetchAllCourses() {
       let content = await getAllCourses();
-      console.log("course", content);
+
       setCourses(content);
     }
     fetchAllCourses();

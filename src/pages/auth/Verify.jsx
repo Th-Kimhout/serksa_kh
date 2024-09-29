@@ -10,7 +10,6 @@ export function OtpVerification() {
   const navigate = useNavigate();
   const location = useLocation();
   const email = location.state?.email;
-  console.log("email", email);
   const initialValues = {
     otp: Array(6).fill(""), // Initialize an array with 6 empty strings
   };
@@ -31,9 +30,9 @@ export function OtpVerification() {
       email: email,
       verificationCode: otp,
     };
-    console.log("requestVerify", requestVerify);
+
     const verifyRes = await verify(requestVerify);
-    console.log("verifyRes", verifyRes);
+
     if (verifyRes !== undefined) {
       toast.error(verifyRes.errors.description);
     }
@@ -44,7 +43,9 @@ export function OtpVerification() {
     <div className="flex items-center justify-center min-h-screen bg-gray-100 dark:bg-textBlack">
       <div className="max-w-md px-4 py-10 mx-auto text-center bg-white shadow sm:px-8 rounded-xl dark:bg-cardDark border">
         <section className="mb-8">
-          <h1 className="mb-1 text-2xl font-bold dark:text-textDark">OTP Verification</h1>
+          <h1 className="mb-1 text-2xl font-bold dark:text-textDark">
+            OTP Verification
+          </h1>
           <p className="text-[15px] text-slate-500 dark:text-textDark">
             Enter the 6-digit verification code that was sent to your Email.
           </p>

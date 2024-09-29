@@ -4,7 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import logo from "../../assets/Image/logo.png"
+import logo from "../../assets/Image/logo.png";
 
 export function Register() {
   const navigate = useNavigate();
@@ -29,7 +29,6 @@ export function Register() {
   });
   // handle register
   const handleRegister = (values) => {
-    console.log("values", values);
     navigate("/register-personal-info", {
       state: {
         accountInfo: {

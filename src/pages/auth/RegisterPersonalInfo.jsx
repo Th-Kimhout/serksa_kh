@@ -11,11 +11,9 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 export function RegisterPersonalInfo() {
   const navigate = useNavigate();
   const location = useLocation();
-  
+
   // Using optional chaining to safely access accountInfo
   const accountInfo = location?.state?.accountInfo || {};
-  
-  console.log("Account Info", accountInfo);
 
   const initialValues = {
     name: "",
@@ -40,8 +38,6 @@ export function RegisterPersonalInfo() {
       biography: values.biography,
       role: values.role,
     };
-
-    console.log("allData", allData);
 
     const registerRes = await register(allData);
 

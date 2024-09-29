@@ -10,7 +10,7 @@ export default function starteda() {
   const [course, setCourse] = useState(null); // For storing the course data
   const [error, setError] = useState(null); // For handling error
   const { slug } = useParams(); // Get the course ID from URL params
-  let orderNo=0;
+  let orderNo = 0;
 
   useEffect(() => {
     const fetchSingleCourse = async () => {
@@ -26,11 +26,11 @@ export default function starteda() {
     fetchSingleCourse();
   }, [slug]); // Add id as a dependency
   const [courses, setCourses] = useState([]);
-  console.log("course", courses);
+
   useEffect(() => {
     async function fetchAllCourses() {
       let content = await getAllCourses();
-      console.log("course", content);
+
       setCourses(content);
     }
     fetchAllCourses();
@@ -51,11 +51,10 @@ export default function starteda() {
   return (
     <>
       <StartedCard
-      slug={course.slug}
+        slug={course.slug}
         orderNo={orderNo}
         sections={course.sections}
       />
-
     </>
   );
 }

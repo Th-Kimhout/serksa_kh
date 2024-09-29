@@ -1,6 +1,5 @@
 //login
 export async function login(values) {
-  console.log(values);
   //   convert value to json
   const body = JSON.stringify(values);
   try {
@@ -22,7 +21,6 @@ export async function login(values) {
 
 //register
 export async function register(values) {
-  console.log("values in signup", values);
   const body = JSON.stringify(values);
   try {
     const response = fetch(`${import.meta.env.VITE_BASE_URL}auth/register`, {
@@ -33,7 +31,6 @@ export async function register(values) {
       body: body,
     }).then((res) => res.json());
     const data = await response;
-    // console.log("data in function",data);
     return data;
   } catch (error) {
     console.log(error);
@@ -42,7 +39,6 @@ export async function register(values) {
 
 // verify
 export async function verify(values) {
-  console.log("values in register func", values);
   //   convert value to json
   const body = JSON.stringify(values);
   try {
@@ -55,7 +51,6 @@ export async function verify(values) {
       body: body,
     }).then((res) => res.json());
     const data = await response;
-    // console.log("data in function", data);
     return data;
   } catch (error) {
     console.log(error);

@@ -46,8 +46,6 @@ export function CreateCourse() {
 
     const submitRes = await createCourse(updatedValues);
 
-    console.log(submitRes);
-
     // if (submitRes.id) {
     //   toast.success("Add Course Successfully");
     //   resetForm(); // Reset form after successful submission

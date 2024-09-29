@@ -7,12 +7,10 @@ export default function CoursePage() {
   const [courses, setCourses] = useState([]);
   const [searchQuery, setSearchQuery] = useState(""); // State for search query
 
-  console.log("course", courses);
-
   useEffect(() => {
     async function fetchAllCourses() {
       let content = await getAllCourses();
-      console.log("course", content);
+
       setCourses(content);
     }
     fetchAllCourses();
